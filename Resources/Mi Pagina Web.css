@@ -136,6 +136,10 @@ header h2 {
   width: 200px;
 }
 
+.card:hover {
+  background-color: #01b1f7;
+  color: whitesmoke;
+}
 #fotos-body {
   /*Centralizar titulo*/
   text-align: center;
