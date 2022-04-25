@@ -283,3 +283,22 @@ footer p {
   margin: 0;
   background-color: black;
 }*/
+
+@media only screen and (max-width: 481) {
+
+  .column {
+    /*El espacio en blanco entre los cuadros*/
+    padding: 0 90px 60px;
+  
+    /*Alineamiento de los cuadros verticalmente*/
+    text-align: center;
+  }
+
+  .footer-bottom div {
+    text-align: left;
+    float:left;
+    padding: 0;
+  }
+
+
+}
