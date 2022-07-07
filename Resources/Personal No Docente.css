@@ -69,6 +69,8 @@ body {
   color: black;
 }
 
+
+
 .pri {
   text-align: center;
 }
@@ -99,6 +101,9 @@ body {
   text-align: justify;
 }
 
+.colu {
+  display: inline-block;
+}
 .columna {
   /*Para que cuadros estén en una misma fila*/  
   display:inline-block;
@@ -110,23 +115,9 @@ body {
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rari {
+  font-size: 18px;
+}
 
 
 

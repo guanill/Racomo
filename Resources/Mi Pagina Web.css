@@ -80,6 +80,8 @@ body {
 
   /*Para eliminar formato de link*/
   text-decoration: none;
+
+  transition: background-color 0.3s ease-in;
 }
 
 .hipervinculos a:hover {
@@ -98,7 +100,7 @@ header h2 {
 
   /*Altura y ancho del fondo*/
   width: 100%;
-  heigth: 50px;
+  padding: 10px 0;
 }
 
 .oportunidades {
@@ -134,12 +136,19 @@ header h2 {
   /*Controla el espacio donde se puede ubicar el contenido del cuadrado*/
   height: 250px; 
   width: 200px;
+
+  transition: background-color 0.3s ease-in;
 }
 
 .card:hover {
   background-color: #01b1f7;
   color: whitesmoke;
 }
+
+
+
+
+
 #fotos-body {
   /*Centralizar titulo*/
   text-align: center;
@@ -171,9 +180,10 @@ header h2 {
   left: 0;
   right: 0;
   
-  /*Color del cuadro transparente*/
-  background-color: #01b1f770;
+  /*Color del cuadro transparentebackground-color: #01b1f770;*/
+  background-color: #01b1f795;
 }
+
 
 #fotos-body p {
   /*Formato del texto*/
@@ -196,51 +206,212 @@ header h2 {
   position: relative;
 }
 
-.objetivos h2 {
-  background-color: #01b1f7;
-  width: 400px;
-  padding: 20px 15px;
+
+
+
+.objetivos {
   color: white;
-  text-align: right;
+  background-color: #01b1f7;
+  margin: 0 0 20px;
+  padding: 20px 0;
 }
 
-.objetivos p {
-  font-size: 20px;
+.objetivos h2 {
+  width: 100%;
+  padding: 20px 0px;
+  text-align: center;
+  margin: 0;
+}
+
+.par {
+  margin: 10px 93px;
 }
 
 .objetivos ul {
+  list-style: none;
+  text-align: center;
   padding: 0;
+  margin: 10px 0 0 0;
 }
 
 .objetivos li {
-  background-color: #01b1f7;
-  color: white;
-  
-  padding: 20px 15px;
-  list-style-type: none;
-  margin: 10px 0;
-  font-size: 20px;
+  height: 150px;
+  width: 300px; 
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 20px;
+}
+
+.objetivos ul p {
+  text-align: justify;
+}
+
+.cursos {
+  margin: 50px 0 80px;
+}
+
+.cursos h2 {
+  text-align: center;
+  font-size: 25px;
+  margin: 0px;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 7vmin 7vmin 7vmin;
+overflow: hidden;
+transform: skew(5deg);
+}
+
+.container .card1 {
+flex: 1;
+transition: all 1s ease-in-out;
+height: 75vmin;
+position: relative;
+}
+
+.container .card1 .card__head {
+color: white;
+background: #01b1f7;
+padding: 0.5em;
+transform: rotate(-90deg);
+transform-origin: 0% 0%;
+transition: all 0.5s ease-in-out;
+min-width: 100%;
+text-align: center;
+position: absolute;
+bottom: 0;
+left: 0;
+font-size: 1em;
+white-space: nowrap;
+}
+.container .card1:hover {
+flex-grow: 10;
+}
+.container .card1:hover img {
+filter: grayscale(0);
+}
+.container .card1:hover .card__head {
+text-align: center;
+top: calc(100% - 2em);
+color: white;
+background: rgba(0, 0, 0, 0.5);
+font-size: 2em;
+transform: rotate(0deg) skew(-5deg);
+}
+.container .card1 img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: all 1s ease-in-out;
+filter: grayscale(100%);
+}
+.container .card1:not(:nth-child(5)) {
+margin-right: 1em;
 }
 
 
 
-
-
+.ubicacion {
+  background-color: black;
+  margin: 0 0 50px;
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+}
 
 
 .ubicacion h2 {
-  text-align: center;
   color: white;
-  background-color: black;
   margin: 0;
-  width: 100%;
-  padding: 15px 0;
+  width: 80%;
+  padding: 17% 10%;
+  height: 20%;
+  font-size: 40px;
 }
 
 .ubicacion iframe {
-  width: 100%;
+  width: 80%;
   height: 440px;
   border: 0px;
+}
+
+.inro {
+  text-align: center;
+  font-size: 25px;
+}
+
+.reviews {
+  display: inline-block;
+  width:100%;
+}
+
+/* center the blockquote in the page */
+.blockquote-wrapper {
+  display: flex;
+  height: 400px;
+  padding: 0 20px;
+  margin: 10px;
+}
+
+/* Blockquote main style */
+.blockquote {
+   position: relative;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 800;
+   color: black;
+   padding: 20px 0;
+   width: 100%;
+   max-width: 500px;
+   z-index: 1;
+   margin: 20px 20px auto;
+   align-self: center;
+   border-top: solid 1px;
+   border-bottom: solid 1px;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+   position: relative;
+   color: black;
+   font-size: 40px;
+   font-weight: 800;
+   line-height: 1;
+   margin: 0;
+}
+
+/* Blockquote right double quotes */
+.blockquote:after {
+   position: absolute;
+   content: "”";
+   color: black;
+   font-size: 9rem;
+   line-height: 0;
+   bottom: -43px;
+   right: 30px;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+   .blockquote h1 {
+       font-size: 60px;
+  }
+
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+   position: relative;
+   color: #292a2b;
+   font-size: 1.4rem;
+   font-weight: normal;
+   line-height: 1;
+   margin: 0;
+   padding-top: 20px;
+   z-index: 1;
 }
 
 footer {
@@ -267,6 +438,7 @@ footer {
   text-decoration: none;
   display: block;
   color: white;
+  transition: all 0.45s;
 }
 
 #rafael-footer {
@@ -282,8 +454,14 @@ footer p {
   padding: 5px 0 10px;
   margin: 0;
   background-color: black;
-}*/
+}
 
+footer a:hover {
+  /*Cambia de color de texto y fondo cuando el cursor esta encima*/
+  color: black;
+}
+
+/*Formato para pantallas de cel*/
 @media only screen and (max-width: 481) {
 
   .column {

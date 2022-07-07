@@ -73,64 +73,59 @@ body {
   text-align: center;
 }
 
+.fecha {
+  background-color: black;
+  color: white;
+  width: 10%;
+}
 
-.ciencias {
-  /*Centralizar el texto de todas las etiquetas dentro de esta*/  
+.actividad ul {
+  padding: 0;
   text-align: center;
 }
 
-.ciencias h2 {
-  padding: 30px 30px 15px;
-  font-size: 24px;
+.actividad li{
+  display: inline-block;
 }
 
-.ciencias h3 {
-  font-size: 20px;
-  text-align: left;
+.actividad img {
+  height: 300px;
 }
 
-.fila img {
-  /*Imagenes no se salgan del cuadrado*/
-  width: 220px;
+.actividad h1 {
+  text-align: center;
 }
 
-.fila p {
-  font-size: 18px;
+.actividad h2 {
   text-align: justify;
+  padding: 20px;
 }
 
-.columna {
-  /*Para que cuadros estén en una misma fila*/  
-  display:inline-block;
-
-  /*El espacio en blanco entre los cuadros*/
-  padding: 0 30px;
-  vertical-align: top;
-  width: 300px;
-  
+.numero {
+  font-size: 70px;
 }
 
+.head div {
+  display: inline-block;
+  vertical-align: bottom;
+}
 
+.titu {
+  font-size: 40px;
+}
 
+#volver {
+  text-decoration: none;
+  color: black;
+  transition: all 0.45s;
+  font-size: 25px;
+  margin: 0 47.55%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#volver:hover {
+  color: #01b1f7;
+  border-bottom: 3px solid #01b1f7;
+}
 
 footer {
   background-color: #01b1f7;
