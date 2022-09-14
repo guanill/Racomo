@@ -5,7 +5,7 @@ var contrasena = document.getElementById("password").value;
 
 if (nombreUsuario == "Student" && contrasena == "Admin1234") 
 {
-    window.open("../guanill.github.io/portal.html")
+    window.open("portal.html")
 }
 else
 {
